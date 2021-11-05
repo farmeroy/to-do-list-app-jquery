@@ -3,6 +3,25 @@
     box-sizing: border-box;
 }
 
+.to-do__app {
+    margin: 20px auto;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid black;
+}
+
 .to-do__btn:hover {
     cursor: pointer;
+}
+
+.to-do__list {
+    list-style: none;
+    text-align: left;
+    padding: 1rem;
+}
+
+.strike {
+    text-decoration: line-through;
 }
