@@ -6,8 +6,16 @@ toDoList.append('<li>learn jquery</li>');
 
 addItemBtn.on('click', addItemHandler);
 
-function addItemHandler() {
+
+function addItemHandler(e) {
+    e.preventDefault();
     const newItem = toDoInput.val();
-    toDoList.append(`<li>${newItem}</li`);
+    const listItem = `<li>${newItem}</li>`;
+    toDoList.append(listItem).on('click', strike);
     toDoInput.val('');
+}
+
+function strike() {
+   $('li').addClass('strike').fadeOut(1000)
+   
 }
