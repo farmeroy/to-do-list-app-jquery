@@ -17,7 +17,7 @@
 }
 
 .to-do__list {
-    list-style: none;
+    list-style: ;
     text-align: left;
     padding: 1rem;
 }
