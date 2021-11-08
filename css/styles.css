@@ -52,10 +52,14 @@ li:hover{
 	display: none;
 }
 
-li > crossOutButton {
+.crossOutButton {
 	background: none;
 	border: none;
 	float: right;
 	color: #025f70;
 	font-weight: 800;
+}
+
+.crossOutButton:hover {
+    cursor: pointer;
 }
